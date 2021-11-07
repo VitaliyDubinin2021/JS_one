@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let arg1 = Number(prompt('Здравствуйте! Введите значение параметра "arg1": '));
+        let arg2 = Number(prompt('Введите значение параметра "arg2": '));
+        function one(a, b) {
+            return a + b;
+        }
+        function two(a, b) {
+            return a - b;
+        }
+        function three(a, b) {
+            return a * b;
+        }
+        function four(a, b) {
+            return a / b;
+        }
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "+":
+                    return one(arg1, arg2);
+                case "-":
+                    return two(arg1, arg2);
+                case "*": 
+                    return three(arg1, arg2);
+                case "/":
+                    return four(arg1, arg2);
+                default:
+                    alert('Укажите операцию, которую хотите осуществить с операндами! ')
+            }
+        }
+                alert(mathOperation(arg1, arg2, "+"));
+                alert(mathOperation(arg1, arg2, "-"));
+                alert(mathOperation(arg1, arg2, "*"));
+                alert(mathOperation(arg1, arg2, "/"));
+    </script>
+</body>
+</html>

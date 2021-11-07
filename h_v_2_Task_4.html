@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let a = Number(prompt('Здравствуйте! Введите значение параметра "a": '));
+        let b = Number(prompt('Введите значение параметра "b": '));
+        function one(a, b) {
+            return a + b;
+        }
+        let c = one(a, b);
+        alert("Сумма чисел " + a + " и " + b + " равна " + c);
+        function two(a, b) {
+            return a - b;
+        }
+        let d = two(a, b);
+        alert("Разность чисел " + a + " и " + b + " равна " + d);
+        function three(a, b) {
+            return a * b;
+        }
+        let e = three(a, b);
+        alert("Произведение чисел " + a + " и " + b + " равно " + e);
+        function four(a, b) {
+            return a / b;
+        }
+        let f = four(a, b);
+        alert("Результат деления " + a + " и " + b + " равен " + f);
+    </script>
+</body>
+</html>
