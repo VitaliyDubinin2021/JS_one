@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let a = Number(prompt('Здравствуйте! Введите целочисленное значение переменной "а": '));
+        let b = Number(prompt('Введите целочисленное значение переменной "b": '));
+        if (a >= 0 && b >= 0) {
+            let g = a - b;
+            alert(g);
+        } else if (a < 0 && b < 0) {
+           let y = a * b;
+           alert(y); 
+        } else if ((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
+            let o = a + b;
+            alert(o);
+        }
+    </script>
+</body>
+</html>
+
